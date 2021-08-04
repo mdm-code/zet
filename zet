@@ -80,7 +80,7 @@ test "${0##*/}" = zet && create_entry
 
 test "${0##*/}" = zetf && \
 	find "$zettel_dir" -maxdepth 2 -type f\
-		| fzf\
+		| fzf-tmux --preview 'cat {}'\
 		| xargs -I {} "$editor" "{}"\
 		&& exit 0
 
