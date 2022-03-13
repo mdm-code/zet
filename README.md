@@ -38,3 +38,26 @@ links to other entries in Zettelkasten. Zettel links can then be navigated with
 Use magic Vi wands. Type in query names in Vi buffer and type `!!zetp` or
 `!!zetg` in the normal mode. This will insert links if they're returned.
 
+
+## Interactions
+
+
+### Inside Vim
+
+I use `zetg` and `zetp` inside a Vi session to paste file paths. And then
+i use `gf` in the normal mode to go these files.
+
+
+### From the command line
+
+Also, one might want to open multiple files at once from the command line.
+Here is how to do it.
+
+```sh
+vim -O $(zetg posix)
+```
+
+This command is going to open all files in separate splits. Without the
+`-O` parameter, files would be opened is separate buffers, which is also
+nice.
+
