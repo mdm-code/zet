@@ -14,7 +14,6 @@ In order to set up this program, take the following steps:
 * Put `zet`, `zetf`, `zetp`, `zetg` on the `$PATH`. `setup.py` can do that for
   you by putting copying these files into `usr/local/bin`.
 * Export `$EDITOR` to set your favorite text editor (`Vi` is the default one).
-* Export `$JOURNAL` to tell where you like your zettel to live.
 
 
 ## Usage
