@@ -1,19 +1,14 @@
 # POSIX Zettelkasten
 
-This is a single-script implementation of a text-based Zettelkasten.
-There is a single multicommand following the Busybox approach that
-relies on the names of hardlinks to pick the right path for the command
-execution.
+This is a single-script implementation of a text-based Zettelkasten. There is a
+single multicommand following the Busybox approach that relies on the names of
+hardlinks to pick the right path for the command execution.
 
 
 ## Setup
 
-In order to set up this program, take the following steps:
-
-* Run `setup.sh` to setup hard links to `zet`.
-* Put `zet`, `zetf`, `zetp`, `zetg` on the `$PATH`. `setup.py` can do that for
-  you by putting copying these files into `usr/local/bin`.
-* Export `$EDITOR` to set your favorite text editor (`Vi` is the default one).
+Check the `zet` Ansbile role in my dotfiles configuration to get an idea where
+and how the script can be copied to take full advantage of it.
 
 
 ## Usage
@@ -59,4 +54,3 @@ vim -O $(zetg posix)
 This command is going to open all files in separate splits. Without the
 `-O` parameter, files would be opened is separate buffers, which is also
 nice.
-
